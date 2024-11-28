@@ -1,5 +1,4 @@
 from openai import OpenAI
-from openai import types
 import os
 from dotenv import load_dotenv
 
