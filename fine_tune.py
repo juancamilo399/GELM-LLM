@@ -30,6 +30,9 @@ print(f"The file {validation_fine_tunning_file.id} was upload to validate fine t
 fine_tunning_job = client.fine_tuning.jobs.create(
   training_file=train_fine_tunning_file.id,
   validation_file=validation_fine_tunning_file.id,
+  hyperparameters={
+    "batch_size":4
+  },
   model="gpt-4o-mini-2024-07-18"
 )
 
