@@ -32,7 +32,7 @@ def generate_response(message, history):
     formatted_history.append({"role": "user", "content": message})
   
     response = client.chat.completions.create(
-        model='ft:gpt-4o-mini-2024-07-18:personal::AWPw2HSW',
+        model='ft:gpt-4o-mini-2024-07-18:personal::AYfYpJVJ',
         messages=formatted_history,
         temperature=0.5,
         stream=True
